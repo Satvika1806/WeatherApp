@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/a65be0b639.js" crossorigin="anonymous"></script>
+    <title> Weather App </title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style1.css">
+
+    <script src="./script1.js" defer></script>
+</head>
+<body>
+
+    <div class="weatherApp">  
+        
+        <div class="display">
+
+            <div class="head">
+
+                <h3> Current Weather </h3>
+                <i class="fas fa-globe"></i> 
+                <span class = "Country"> India </span>
+                    
+            </div>
+
+            <div class="space">
+                
+                <div class="weather">  
+                    <h1 class="temp"> 28° </h1>
+                    <div class="flex">
+                        <img 
+                        src= "./icons/day/113.png" 
+                        class="icon" 
+                        alt="icon" 
+                        height="50" 
+                        width="50" />
+                        <div class="description"> Sunny </div>   
+                            <!-- span to div -->
+                    </div>  
+
+                </div>
+                    
+
+                <div> 
+                    
+                    <div class="city-time">
+                        <h1 class="location"> Tirupati </h1>
+                        <span class="time"> 
+                            22:25 
+                        </span>
+                        -
+                        <span class="date"> 
+                            Tuesday, 19 July 
+                        </span>  
+                    </div>
+                        
+                </div>  
+
+            </div>
+
+        </div>     
+
+        <div class="card">
+
+            
+            <input 
+                type="text" 
+                class="search" id = "search"
+                placeholder="Location..."
+            />
+            <button type="submit" class="submit" onclick="clickevent()">
+                        <i class="fas fa-search-location fa-lg"></i>
+            </button>
+            
+
+            <ul class="cities">
+                <li id="city1" class="city"> Visakhapatnam </li>
+                <li id ="city2" class="city"> Hyderabad </li>
+                <li id="city3" class="city"> Delhi </li>
+                <li id= "city4" class="city"> Mumbai </li>
+            </ul>
+            
+            <ul class="info">
+
+                <h3> Weather Details: </h3>
+                
+                <li>
+                    <span> Feels like </span>
+                    <span class="tempf"> 28°C  </span>
+                </li>
+
+                <li>
+                    <span> Cloudy </span>
+                    <span class="clouds"> 10%  </span>
+                </li>
+
+                <li>
+                    <span> Humidity </span>
+                    <span class="humid"> 89% </span>
+                </li>
+
+                <li>
+                    <span> Wind Speed </span>
+                    <span class="wind"> 13km/h </span>
+                </li>
+
+            </ul>
+        
+        </div>
+ 
+    </div>
+    
+</body>
+</html>
