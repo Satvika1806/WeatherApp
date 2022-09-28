@@ -1,7 +1,7 @@
 
 let weather = {
     fetchWeather: function(cityName){
-        fetch("https://api.weatherapi.com/v1/current.json?key=4d7db9fb320a4c1abaa170651222707&q=" + cityName + "&aqi=no")
+        fetch("https://api.weatherapi.com/v1/current.json?key=5695e79532d34447a3c194606222809&q=" + cityName + "&aqi=no")
         .then((response) => response.json())
         // .then((data) => console.log(data));
         .then((data) => this.displayWeather(data));
